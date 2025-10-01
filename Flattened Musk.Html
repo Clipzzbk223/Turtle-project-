@@ -1,0 +1,145 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Turtles of Alabama: Flattened Musk Turtle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .slide {
+            min-height: 100vh;
+            scroll-snap-align: start;
+        }
+        .slide-content {
+            max-width: 1000px;
+            margin: auto;
+        }
+        /* Style for active navigation dot */
+        .nav-dot.active {
+            background-color: #2dd4bf; /* teal-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div id="container" class="scroll-snap-y-mandatory h-screen overflow-y-scroll">
+
+        <!-- Slide 1: Title -->
+        <div id="slide-1" class="slide flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1200x800/1a202c/718096?text=Rocky+Stream');">
+            <div class="text-center p-8">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Flattened Musk Turtle</h1>
+                <p class="text-xl md:text-2xl text-gray-300">An Alabama Endemic Species</p>
+                <a href="#slide-2" class="mt-8 inline-block bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Slide 2: About -->
+        <div id="slide-2" class="slide flex items-center justify-center bg-gray-800">
+            <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-teal-400 mb-4">About the Species</h2>
+                    <p class="text-gray-300 mb-4">The Flattened Musk Turtle (Sternotherus depressus) is a small freshwater turtle, only growing to about 3-4 inches. Its name comes from its uniquely flat top shell (carapace).</p>
+                    <p class="text-gray-300 mb-4">Primarily aquatic, they are known for the musky odor they release from glands when they feel threatened. The shell is typically a yellowish-brown with dark, web-like patterns.</p>
+                     <p class="text-gray-400 text-sm mt-4">Conservation Status: <span class="font-bold text-red-400">Threatened</span></p>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=Flattened+Musk+Turtle" alt="Flattened Musk Turtle" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Habitat & Distribution -->
+        <div id="slide-3" class="slide flex items-center justify-center bg-gray-900">
+            <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-12 items-center">
+                 <div class="order-1">
+                    <img src="https://placehold.co/600x400/1a202c/4a5568?text=Black+Warrior+River+System" alt="Black Warrior River System" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+                <div class="order-2">
+                    <h2 class="text-3xl font-bold text-teal-400 mb-4">Habitat & Distribution</h2>
+                    <p class="text-gray-300 mb-4">This turtle requires clean, clear, medium-to-large streams with rocky or sandy bottoms. They spend much of their time hiding under large, flat rocks and submerged logs.</p>
+                    <p class="text-gray-300 font-semibold">Their entire global population is found only in the <span class="text-teal-300">upper Black Warrior River system</span> in north-central Alabama.</p>
+                    <p class="text-gray-400 mt-2 text-sm">This limited range makes them extremely vulnerable to habitat degradation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: Nesting & Movement -->
+        <div id="slide-4" class="slide flex items-center justify-center bg-gray-800">
+            <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-teal-400 mb-4">Nesting & Locomotion</h2>
+                    <h3 class="text-xl font-semibold text-white mb-2">Nesting Habits</h3>
+                    <p class="text-gray-300 mb-4">From May to July, females travel upland to lay small clutches of 1-4 eggs in sunny, open areas with sandy soil.</p>
+                    <h3 class="text-xl font-semibold text-white mb-2">How They Move</h3>
+                    <p class="text-gray-300">They are primarily <span class="text-teal-300">bottom-walkers</span>, crawling along the stream bed instead of swimming in open water. Their flat shape is perfect for navigating under rocks to find food and hide from predators.</p>
+                </div>
+                <div class="order-1 md:order-2">
+                     <img src="https://placehold.co/600x400/2d3748/9f7aea?text=Turtle+Footprints" alt="Turtle Footprints in Sand" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Resources -->
+        <div id="slide-5" class="slide flex items-center justify-center bg-gray-900">
+            <div class="slide-content text-center p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-teal-400 mb-6">Learn More & Get Involved</h2>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">The biggest threats to the Flattened Musk Turtle are water pollution and habitat destruction from sedimentation. Protecting their habitat is key to their survival.</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://ecos.fws.gov/ecp/species/2275" target="_blank" class="bg-gray-700 hover:bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">U.S. Fish & Wildlife</a>
+                    <a href="https://www.outdooralabama.com/turtles/flattened-musk-turtle" target="_blank" class="bg-gray-700 hover:bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Outdoor Alabama</a>
+                    <a href="https://www.youtube.com/watch?v=kY3S4o8b6tQ" target="_blank" class="bg-gray-700 hover:bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Watch a Video</a>
+                </div>
+                 <a href="#slide-1" class="mt-12 inline-block text-teal-400 hover:text-teal-200 transition duration-300">Back to Top</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Navigation Dots -->
+    <div class="fixed right-4 top-1/2 -translate-y-1/2 space-y-3">
+        <a href="#slide-1" class="nav-dot block w-3 h-3 bg-gray-500 rounded-full hover:bg-teal-400"></a>
+        <a href="#slide-2" class="nav-dot block w-3 h-3 bg-gray-500 rounded-full hover:bg-teal-400"></a>
+        <a href="#slide-3" class="nav-dot block w-3 h-3 bg-gray-500 rounded-full hover:bg-teal-400"></a>
+        <a href="#slide-4" class="nav-dot block w-3 h-3 bg-gray-500 rounded-full hover:bg-teal-400"></a>
+        <a href="#slide-5" class="nav-dot block w-3 h-3 bg-gray-500 rounded-full hover:bg-teal-400"></a>
+    </div>
+
+    <script>
+        // This script highlights the navigation dot for the currently viewed slide.
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('container');
+            const navDots = document.querySelectorAll('.nav-dot');
+            const slides = document.querySelectorAll('.slide');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const slideId = entry.target.id;
+                        const activeDot = document.querySelector(`.nav-dot[href="#${slideId}"]`);
+                        
+                        navDots.forEach(dot => dot.classList.remove('active'));
+                        if (activeDot) {
+                            activeDot.classList.add('active');
+                        }
+                    }
+                });
+            }, { threshold: 0.6 }); // 60% of the slide must be visible
+
+            slides.forEach(slide => {
+                observer.observe(slide);
+            });
+            
+            // Set initial active dot
+             if (container.scrollTop === 0) {
+                navDots[0].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
+
