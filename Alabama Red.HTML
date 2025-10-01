@@ -1,0 +1,233 @@
+Of course! Here is a complete HTML file that creates an interactive slide presentation about the Alabama red-bellied turtle.
+
+You can copy this code, save it as an .html file (e.g., turtle.html), and open it in any web browser to see the presentation. I've included comments in the code to explain how it works.
+
+HTML Code for the Presentation
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabama Red-Bellied Turtle</title>
+    <style>
+        /* This is the CSS for styling the presentation */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light blue background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .presentation-container {
+            width: 90%;
+            max-width: 900px;
+            background-color: #ffffff;
+            border: 2px solid #006400; /* Dark green border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Hides all slides by default */
+        .slide {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.8s;
+        }
+
+        /* Styles for images */
+        .slide img, .slide .map-placeholder {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .map-placeholder {
+            width: 80%;
+            height: 250px;
+            background-color: #e0e0e0;
+            border: 1px dashed #999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* Styles for text */
+        h1, h2 {
+            color: #005a00;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: #007500;
+        }
+        
+        /* Fade in animation for slides */
+        @keyframes fadeIn {
+            from {opacity: 0.4}
+            to {opacity: 1}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-container">
+
+        <div class="slide">
+            <h1>Alabama Red-Bellied Turtle</h1>
+            <h2><i>Pseudemys alabamensis</i></h2>
+            <p style="text-align: center;"><strong>Alabama's Official State Reptile</strong> 🐢</p>
+            
+            <p>This presentation provides key information about this endangered species, unique to the waterways of Alabama.</p>
+        </div>
+
+        <div class="slide">
+            <h2>Habitat & Range in Alabama</h2>
+            <p>The Alabama red-bellied turtle is a freshwater species that thrives in rivers, streams, and bays with lots of aquatic plants, which are its main food source. </p>
+            <p>Its range is <strong>extremely limited</strong>. It is found almost exclusively in the fresh and brackish waters of the <strong>Mobile-Tensaw River Delta</strong> in Mobile and Baldwin counties. This small, specific habitat makes the species very vulnerable.</p>
+            
+        </div>
+
+        <div class="slide">
+            <h2>Nesting Habits 🥚</h2>
+            <p>Female turtles leave the water to build their nests in open, sandy areas with plenty of sun exposure. This helps the eggs incubate properly.</p>
+            <ul>
+                <li><strong>Nesting Season:</strong> Typically from May through July.</li>
+                <li><strong>Process:</strong> The female uses her hind feet to dig a flask-shaped hole where she lays her eggs before covering them back up.</li>
+                <li><strong>Clutch Size:</strong> A female can lay several clutches per season, with each clutch containing 4 to 20 eggs.</li>
+                <li><strong>Threats:</strong> Nests are highly vulnerable to predators like raccoons, alligators, and fire ants. Human development and flooding can also destroy nests.</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h2>Movement & Tracking 👣</h2>
+            <p><strong>In Water:</strong> They are powerful swimmers, using their webbed feet to navigate the river currents. They spend most of their lives in the water, feeding on aquatic vegetation.</p>
+            <p><strong>On Land:</strong> Their movement on land is slow and deliberate. They typically only leave the water to bask in the sun on logs or to nest.</p>
+            <p><strong>Footprints:</strong> Turtle tracks can help in creating tracking models. The prints from their webbed feet often look like fan-shaped impressions in sand or mud. Key features include:</p>
+            <ul>
+                <li>Five distinct toe/claw marks fanning out.</li>
+                <li>Alternating tracks from the front and back feet.</li>
+                <li>A possible "drag mark" down the center from the tail.</li>
+            </ul>
+            
+        </div>
+
+        <div class="slide">
+            <h2>Conservation Status: Endangered</h2>
+            <p>The Alabama red-bellied turtle is listed as an <strong>endangered species</strong> by the U.S. Fish and Wildlife Service. The primary threats to its survival include:</p>
+            <ul>
+                <li><strong>Habitat Degradation:</strong> Pollution and development in the Mobile-Tensaw Delta harm the water quality and reduce food sources.</li>
+                <li><strong>Nest Predation:</strong> High rates of predation on eggs and hatchlings limit population growth.</li>
+                <li><strong>Bycatch:</strong> Turtles can get caught and drown in fishing gear like crab traps.</li>
+                <li><strong>Boat Strikes:</strong> Collisions with boats can injure or kill adult turtles.</li>
+            </ul>
+        </div>
+        
+        <div class="slide">
+            <h2>Learn More!</h2>
+            <p>Explore these resources to dive deeper into the world of the Alabama red-bellied turtle.</p>
+            
+            <h3>Informational Links:</h3>
+            <ul>
+                <li><a href="https://www.outdooralabama.com/reptiles/alabama-red-bellied-turtle" target="_blank">Alabama Dept. of Conservation and Natural Resources</a></li>
+                <li><a href="https://www.fws.gov/species/alabama-red-bellied-turtle-pseudemys-alabamensis" target="_blank">U.S. Fish & Wildlife Service Species Profile</a></li>
+                <li><a href="https://www.biologicaldiversity.org/species/reptiles/Alabama_red-bellied_turtle/" target="_blank">Center for Biological Diversity</a></li>
+            </ul>
+
+            <h3>Videos:</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=D-aV8uJ0j4Y" target="_blank">Video: Alabama Red-bellied Turtle Recovery (USFWS)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=33aIV1p-lC0" target="_blank">Video: Exploring the Mobile-Tensaw Delta</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button class="button" onclick="changeSlide(-1)">&#10094; Previous</button>
+            <button class="button" onclick="changeSlide(1)">Next &#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        // This is the JavaScript that makes the slides interactive
+        let slideIndex = 1;
+        showSlide(slideIndex); // Show the first slide when the page loads
+
+        // Function to change the slide (n is 1 for next, -1 for previous)
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        // Main function to display the correct slide
+        function showSlide(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            
+            // Logic to loop back to the first slide or go to the last slide
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            // Display the current slide
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
